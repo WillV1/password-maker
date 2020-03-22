@@ -38,10 +38,15 @@ var keyword = ''
   for (var i = 0; i < passwordLength; i++){
     keyword = keyword + include.charAt((Math.floor(Math.random() * include.length)));
   }
-
+  
   console.log(keyword);
 }
+
 generate();
+
+function generatePassword(){
+  return generate();
+}
 
 // Write password to the #password input
 
