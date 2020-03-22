@@ -7,7 +7,7 @@ var uppercaseTypes = prompt("Would you like to include uppercase characters?")
 var numericalTypes = prompt("Would you like to include numerical characters?")
 var specialTypes = prompt("Would you like to include special characters?")
 
-//function generate() {
+function generate() {
   
 const lowerCase = 'abcdefghijklmnopqrstuvwxyz';
 const upperCase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
@@ -40,8 +40,8 @@ var keyword = ''
   }
 
   console.log(keyword);
-//}
-
+}
+generate();
 
 // Write password to the #password input
 
