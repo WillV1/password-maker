@@ -10,32 +10,31 @@ var numericalTypes = prompt("Would you like to include numerical characters?")
 var specialTypes = prompt("Would you like to include special characters?")
 
 
-//Function takes answers to prompts to generate password.  JIC, "include" code suggestions provided by https://www.youtube.com/watch?v=i6cX05cyIgc
+//Function takes answers from prompts to generate password.  JIC, "include" code suggestions provided by https://www.youtube.com/watch?v=i6cX05cyIgc
 function generate() {
   
-const lowerCase = 'abcdefghijklmnopqrstuvwxyz';
-const upperCase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-const numerical = '0123456789';
-const specialChar = '!@#$%^&*()+?';
+let lowerCase = 'abcdefghijklmnopqrstuvwxyz';
+let upperCase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+let numerical = '0123456789';
+let specialChar = '!@#$%^&*()+?';
 
+let include = '';
 
-var include = '';
-
-if (lowercaseTypes = "yes"){
+if (lowercaseTypes == "yes"){
   include += (lowerCase);
-}
+} else {''};
 
-if (uppercaseTypes = "yes") {
+if (uppercaseTypes == "yes"){
   include += (upperCase);
-}
+} else {''};
 
-if (numericalTypes = "yes") {
-  include += numerical
-}
+if (numericalTypes == "yes") {
+  include += (numerical)
+} else {''};
 
-if (specialTypes = "yes") {
-  include += specialChar
-}
+if (specialTypes == "yes") {
+  include += (specialChar)
+} else {''};
 
 let keyword = ''
 
