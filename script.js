@@ -45,8 +45,6 @@ let keyword = ''
   return keyword
 }
 
-generate ()
-
 function generatePassword(){
   return generate();
 }
